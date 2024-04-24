@@ -1,0 +1,52 @@
+.Header{
+    padding: 1.5rem 0;
+    background-color: #0F52BA;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 18px;
+
+
+    h1{
+        margin: 0 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        p{
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+
+
+    .ButtonCart{
+        width: 90px;
+        height: 45px;
+        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        justify-content: center;
+        gap: 1rem;
+        border-radius: 8px;
+
+
+        img{
+            width: 19px;
+            height: 18px;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+}
