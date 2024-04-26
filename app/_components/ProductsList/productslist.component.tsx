@@ -1,18 +1,23 @@
 "use client"
-
+import { useContext } from "react"
 import Product from "@/types/products"
 import styles from "../../styles/Products.module.scss"
+import { CartContext } from "@/contexts/cart.context"
 
 interface ProductProps{
-    product: Product[]
+    product: Product
 }
 
 export async function ProductsList({product}: ProductProps) {
     const response = await fetch("https://mks-frontend-challenge-04811e8151e6.herokuapp.com/api/v1/products?page=1&rows=8&sortBy=id&orderBy=ASC")
     const data = await response.json()
 
+   /// const { addProductToCart } = useContext(CartContext)
+
     const handleSubmitProduct = () => {  
+        //addProductToCart(product)
     }
+
   return (
    <>
     <div className={styles.Container}>

@@ -12,7 +12,7 @@ interface Product {
 }
 
 interface HeaderProps {
-  products: Product[];
+  products: Product;
 }
 
 
