@@ -1,13 +1,32 @@
-import Header from "./_components/Header/header.component";
-import Products from "./_components/products/Product.component";
+import Footer from "./_components/Footer/footer.component"
+import Header from "./_components/Header/header.component"
+import { ProductsList } from "./_components/ProductsList/productslist.component"
+import Cart from "./_components/cart/cart.component";
+interface Product {
+  id: string;
+  name: string;
+  price: number;
+  description: string;
+  photo: string;
+  quantity: number;
+}
+
+interface HeaderProps {
+  products: Product[];
+}
+
+
+export default async function Home({ products}: HeaderProps) {
 
 
 
-export default function Home() {
-  return (
-    <> 
-       <Header/>
-       <Products/>
-    </>
-  );
+return (
+  <>
+    <Header/>
+    <Cart/>
+    <ProductsList product={products}/>
+    <Footer/>
+  </>
+)
+
 }

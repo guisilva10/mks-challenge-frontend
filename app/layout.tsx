@@ -1,5 +1,10 @@
+
+
 import type { Metadata } from "next";
 import "./globals.scss";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { queryClient } from "@/services/queryClient";
+import CartContextProvider from "@/contexts/cart.context";
 
 export const metadata: Metadata = {
   title: "MKS Challenge Front-End",
@@ -13,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+          <CartContextProvider>
+            {children}
+          </CartContextProvider>
+        </body>
     </html>
   );
 }

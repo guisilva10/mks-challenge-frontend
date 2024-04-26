@@ -1,8 +1,9 @@
 interface Product {
     id: string
-    name: "Apple watch"
-    description: "relogio apple"
-    price: 90.50
+    name: string
+    description: string
+    price: number
+    photo: string
   }
   
   export default Product
