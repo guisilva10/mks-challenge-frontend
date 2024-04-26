@@ -1,23 +1,9 @@
 "use client"
 import styles from "../../styles/Header.module.scss"
 
-import React, { useState, useContext } from 'react';
-import Cart from "../cart/cart.component";
+import React, { useContext } from 'react';
 import { CartContext } from "@/contexts/cart.context";
 
-
-interface Product {
-  id: string;
-  name: string;
-  price: number;
-  description: string;
-  photo: string;
-  quantity: number;
-}
-
-interface HeaderProps {
-  products: Product[];
-}
 
 const Header: React.FC = () => {
 

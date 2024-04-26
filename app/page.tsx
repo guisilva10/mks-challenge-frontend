@@ -1,31 +1,10 @@
-import Product from "@/types/products";
-import Footer from "./_components/Footer/footer.component"
-import Header from "./_components/Header/header.component"
-import { ProductsList } from "./_components/ProductsList/productslist.component"
-import Cart from "./_components/cart/cart.component";
-interface ProductProps {
-  id: string;
-  name: string;
-  price: number;
-  description: string;
-  photo: string;
-  quantity: number;
+import HomePage from "./(home)/page";
+
+
+const App = () => {
+  return ( 
+    <HomePage />
+   );
 }
-interface HeaderProps {
-  products: ProductProps;
-}
-
- function Home({ products}: HeaderProps) {
-
-return (
-  <>
-    <Header/>
-    <Cart/>
-    <ProductsList product={products}/>
-    <Footer/>
-  </>
-)
-
-}
-
-export default Home
+ 
+export default App;
