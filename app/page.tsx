@@ -15,9 +15,7 @@ interface HeaderProps {
   products: ProductProps;
 }
 
-export default async function Home({ products}: HeaderProps) {
-
-
+ function Home({ products}: HeaderProps) {
 
 return (
   <>
@@ -29,3 +27,5 @@ return (
 )
 
 }
+
+export default Home
