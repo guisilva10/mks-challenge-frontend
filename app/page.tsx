@@ -12,7 +12,7 @@ interface ProductProps {
   quantity: number;
 }
 interface HeaderProps {
-  products: Product;
+  products: ProductProps;
 }
 
 export default async function Home({ products}: HeaderProps) {
